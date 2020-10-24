@@ -34,7 +34,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Install Homebrew
-        run:  curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
       - name: Audit formula
         run: brew cask audit cask.rb
       - name: Lint formula
