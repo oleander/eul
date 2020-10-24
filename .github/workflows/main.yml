@@ -14,8 +14,8 @@ jobs:
       - name: Install Homebrew
         run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
       - name: Audit formula
-        run: brew cask audit cask.rb
+        run: brew cask audit eul.rb
       - name: Lint formula
-        run: brew cask style cask.rb
+        run: brew cask style eul.rb
       - name: Install formula
-        run: brew cask install cask.rb
+        run: brew cask install eul.rb
