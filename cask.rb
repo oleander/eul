@@ -12,4 +12,8 @@ cask "eul" do
   depends_on macos: ">= :catalina"
 
   app "eul.app"
+
+  zap trash: [
+    "~/Library/Preferences/com.gaosun.eul.plist",
+  ]
 end
